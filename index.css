@@ -2,6 +2,11 @@
     margin: 0%;
     padding: 0%;
 }
+
+html{
+    font-size: clamp(12px, 1.5vw, 16px);
+    scroll-behavior: smooth;
+}
 /* header */
 header{
     width: 100%;
@@ -51,13 +56,19 @@ header{
 main{
     background-color: #1F1F21;
     color:#fff;
-    height: 2800px;
+    padding-bottom: 100px;
 }
 .main-container{
     display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 50px 20px 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 .astau{
-    margin: 100px 150px;
+    max-width: 100%;
 }
 .main-container-text{
     display: flex;
@@ -87,13 +98,12 @@ button{
 .secondary-container{
     margin: 100px 150px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
 }
-.container2{
-    margin-left: 80px;
-}
-.container3{
-    margin-left: 80px;
-}
+
 .secondary-container h2{
     margin-top: 30px;
     font-size: 30px;
@@ -103,9 +113,12 @@ button{
 }
 .third-container{
     display: flex;
-    margin-left: 100px;
+    width: 100%;
+    justify-content: center;
     margin-top: 150px;
     background-color: #1F1F21;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .text{
     margin: 150px 150px;
@@ -119,40 +132,47 @@ button{
     margin-left: 80px;
 }
 footer{
-    width: 100%;
-    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    padding: 100px;
     background-color: rgb(0, 0, 0);
-    margin-top: -100px;
 }
-.line{
+/* .line{
+    position: absolute;
+    top: 0;
     width: 83%;
     height: 4px;
     border:0 none;
-    margin-left: 100px;
-    margin-top: 100px;
     background-color: #fff;
-}
+} */
 .info{
+    justify-content: flex-start;
+}
+.info ul{
     display: flex;
-    margin-left: 60px;
-    margin-top: 100px;;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .info ul li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     list-style: none;
     display: inline-block;
     font-size: 30px;
-    margin-left: 40px;
 }
 .info ul li a{
     text-decoration: none;
     color: #fff;
 }
 
+.social-networks{
+    text-align: center;
+}
+
 .social-networks h3{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 150px;
-    margin-left: 100px;
     display: inline-block;
     color: #fff;
     font-size: 30px;
@@ -165,9 +185,8 @@ footer{
 }
 .address{
     font-size: 30px;
-    margin-left: 900px;
-    margin-top: -40px;
     color: #fff;
+    text-align: center;
 }
 .address a{
     text-decoration: none;
