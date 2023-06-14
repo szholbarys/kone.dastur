@@ -121,7 +121,7 @@ button{
     gap: 20px;
 }
 .text{
-    margin: 150px 150px;
+    padding:50px;
     font-size: 30px;
     text-align: center;
 }
