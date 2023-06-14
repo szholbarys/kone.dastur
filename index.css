@@ -25,7 +25,6 @@ header{
 }
 .logo{
     cursor: pointer;
-    margin-left: -50px;
 }
 .navbar ul li{
     list-style: none;
