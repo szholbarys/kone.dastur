@@ -4,7 +4,7 @@
 }
 
 html{
-    font-size: clamp(12px, 1.5vw, 28px);
+    font-size: clamp(12px, 1.5vw, 20px);
     scroll-behavior: smooth;
 }
 /* header */
@@ -31,7 +31,7 @@ header{
     display: inline-block;
     margin: 0 10px;
     font-size: 30px;
-    font-size: clamp(12px, 1.5vw, 28px);
+    font-size: clamp(12px, 1.5vw, 20px);
 
 }
 .navbar ul li a{
